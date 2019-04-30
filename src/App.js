@@ -14,6 +14,8 @@ function App() {
       <Segment inverted>
         <Navigation />
         <MainHeader />
+      </Segment>
+      <Segment inverted>
         <OurValuedClients />
         <Footer />
       </Segment>

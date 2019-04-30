@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Input, Menu, Segment } from "semantic-ui-react";
+import { Menu, Segment } from "semantic-ui-react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 export default class Navigation extends Component {
   state = { activeItem: "home" };
@@ -10,30 +11,27 @@ export default class Navigation extends Component {
     const { activeItem } = this.state;
 
     return (
-      <Segment inverted>
-        <Menu inverted>
-          <Menu.Item
-            name="home"
-            active={activeItem === "home"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="messages"
-            active={activeItem === "messages"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Item
-            name="friends"
-            active={activeItem === "friends"}
-            onClick={this.handleItemClick}
-          />
-          <Menu.Menu position="right">
-            <Menu.Item>
-              <Input icon="search" placeholder="Search..." />
-            </Menu.Item>
-          </Menu.Menu>
-        </Menu>
-      </Segment>
+      <Router>
+        <Segment inverted>
+          <Menu inverted>
+            <Link as="a" to="/">
+              <Menu.Item
+                name="home"
+                active={activeItem === "home"}
+                onClick={this.handleItemClick}
+              />
+            </Link>
+
+            <Link as="a" to="/ContactPage">
+              <Menu.Item
+                name="Contact Us"
+                active={activeItem === "Contact Us"}
+                onClick={this.handleItemClick}
+              />
+            </Link>
+          </Menu>
+        </Segment>
+      </Router>
     );
   }
 }
