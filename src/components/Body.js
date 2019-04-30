@@ -14,14 +14,16 @@ const OurValuedClients = () => (
           <Header
             as="h3"
             style={{
-              fontSize: "2em"
+              fontSize: "2em",
+              color: "white"
             }}
           >
             Our Mission
           </Header>
           <p
             style={{
-              fontSize: "1.33em"
+              fontSize: "1.33em",
+              color: "white"
             }}
           >
             At Gurlabe.com, our mission is to break the barrier for businesses
@@ -53,12 +55,13 @@ const OurValuedClients = () => (
             <Header
               as="h3"
               style={{
-                fontSize: "2em"
+                fontSize: "2em",
+                color: "white"
               }}
             >
               <h1>Our Clientele</h1>
-              <Image src="http://i67.tinypic.com/2dkjuaa.png" />
             </Header>
+            <Image src="http://i67.tinypic.com/2dkjuaa.png" />
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -69,26 +72,28 @@ const OurValuedClients = () => (
       }}
       vertical
     >
-      <Container text>
+      <Container>
         <Header
           as="h3"
           style={{
-            fontSize: "2em"
+            fontSize: "2em",
+            color: "white"
           }}
         >
           Get your free consultation today!
         </Header>
         <p
           style={{
-            fontSize: "1.33em"
+            fontSize: "1.33em",
+            color: "white"
           }}
-          fluid
         >
           Gurlabe.com would love to hear about your business/passion! Give us a
           call today!
+          <br />
+          You may reach out to us at (559) 908-8746 any day of the week from the
+          Hours of 9:00AM - 8:00PM
         </p>
-        You may reach out to us at (559) 908-8746 any day of the week from the
-        Hours of 9:00AM - 8:00PM
       </Container>
     </Segment>
   </div>
