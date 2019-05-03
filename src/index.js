@@ -2,16 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { BrowserRouter as Router } from "react-router-dom";
-import Route from "react-router-dom/Route";
-import ContactPage from "./components/ContactPage";
+
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <Router>
-    <Route exact path="/" component={App} />
-    <Route exact strict path="/ContactPage" component={ContactPage} />
-  </Router>,
+  <div>
+    <App />
+  </div>,
   document.getElementById("root")
 );
 

@@ -1,26 +1,22 @@
-import React from "react";
-
+import React, { Component } from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
-import MainHeader from "./components/Header";
-import OurValuedClients from "./components/Body";
-import Navigation from "./components/Navbar";
-import { Segment, Container } from "semantic-ui-react";
-import Footer from "./components/Footer";
+import HomePage from "./components/HomePage";
+import ContactPage from "./components/ContactPage";
+
 import "semantic-ui-css/semantic.min.css";
 
-function App() {
-  return (
-    <Container>
-      <Segment inverted>
-        <Navigation />
-        <MainHeader />
-      </Segment>
-      <Segment inverted>
-        <OurValuedClients />
-        <Footer />
-      </Segment>
-    </Container>
-  );
+class App extends Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/ContactPage" component={ContactPage} />
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

@@ -31,9 +31,7 @@ export default class Footer extends Component {
                   GurlabeSingh@gmail.com
                 </Header>
                 <p> (559)908-8746 </p>
-                <Header as="h4" dimmed>
-                  © 2019 Gurlabe.com All Rights Reserved.
-                </Header>
+                <Header as="h4">© 2019 Gurlabe.com All Rights Reserved.</Header>
               </Grid.Column>
             </Grid.Row>
           </Grid>
