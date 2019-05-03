@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
-import HomePage from "./components/HomePage";
-import ContactPage from "./components/ContactPage";
+import HomePage from "./pages/HomePage";
+import ContactPage from "./pages/ContactPage";
 
 import "semantic-ui-css/semantic.min.css";
 

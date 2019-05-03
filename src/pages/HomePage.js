@@ -1,22 +1,23 @@
 import React, { Component } from "react";
 
-import MainHeader from "./Header";
-import OurValuedClients from "./Body";
-import Navigation from "./Navbar";
-
+import MainHeader from "../components/Header";
+import OurValuedClients from "../components/Body";
+import Navigation from "../components/Navbar";
 import { Segment } from "semantic-ui-react";
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 import "semantic-ui-css/semantic.min.css";
 
 class HomePage extends Component {
   render() {
     return (
-      <Segment>
+      <div>
         <Navigation />
         <MainHeader />
         <OurValuedClients />
-        <Footer />
-      </Segment>
+        <Segment>
+          <Footer />
+        </Segment>
+      </div>
     );
   }
 }

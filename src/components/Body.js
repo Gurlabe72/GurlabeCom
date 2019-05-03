@@ -41,26 +41,28 @@ const OurValuedClients = () => (
       }}
       vertical
     >
-      <Grid celled="internally" columns="equal" stackable>
-        <Grid.Row textAlign="center">
-          <Grid.Column
-            style={{
-              paddingBottom: "5em",
-              paddingTop: "5em"
-            }}
-          >
-            <Header
-              as="h3"
+      <Container>
+        <Grid celled="internally" columns="equal" stackable>
+          <Grid.Row textAlign="center">
+            <Grid.Column
               style={{
-                fontSize: "2em"
+                paddingBottom: "5em",
+                paddingTop: "5em"
               }}
             >
-              Our Clientele
-            </Header>
-            <Image src="http://i67.tinypic.com/2dkjuaa.png" />
-          </Grid.Column>
-        </Grid.Row>
-      </Grid>
+              <Header
+                as="h3"
+                style={{
+                  fontSize: "2em"
+                }}
+              >
+                Our Clientele
+              </Header>
+              <Image src="http://i67.tinypic.com/2dkjuaa.png" />
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </Container>
     </Segment>
     <Segment
       style={{
